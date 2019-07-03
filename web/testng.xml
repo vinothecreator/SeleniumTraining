@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestNgParametersSuite" parallel="false">
+<parameter name="username" value="12346"></parameter>
+    <test name="TestNgParametersTest">
+        <classes>
+            <class
+                name="com.appium.web.TestParameters" />
+        </classes>
+    </test>
+</suite>

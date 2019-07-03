@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNgParametersSuite]">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="TestNgParametersTest(failed)">
+    <classes>
+      <class name="com.javacodegeeks.testng.parameters.TestNgParameterExample">
+        <methods>
+          <include name="t2"/>
+        </methods>
+      </class> <!-- com.javacodegeeks.testng.parameters.TestNgParameterExample -->
+    </classes>
+  </test> <!-- TestNgParametersTest(failed) -->
+</suite> <!-- Failed suite [TestNgParametersSuite] -->
