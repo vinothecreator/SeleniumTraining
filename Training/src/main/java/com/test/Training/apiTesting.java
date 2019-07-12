@@ -18,13 +18,11 @@ import org.testng.annotations.Test;
 public class apiTesting {
 
 	
-	
-	
 	@Test
 	public void givenUserDoesNotExists_whenUserInfoIsRetrieved_then404IsReceived()
 	  throws ClientProtocolException, IOException {
 	  
-	   // Given
+	   // Given   
 	   String name = RandomStringUtils.randomAlphabetic( 8 );
 	   HttpUriRequest request = new HttpGet( "https://api.github.com/users/" + name );
 	 
@@ -33,6 +31,8 @@ public class apiTesting {
 	 
 	/* 
 	   assertThat(
+	
+	   
 	     httpResponse.getStatusLine().getStatusCode(),
 	     equals(HttpStatus.SC_NOT_FOUND));*/
 	}

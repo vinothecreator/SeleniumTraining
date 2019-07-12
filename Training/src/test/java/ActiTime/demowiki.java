@@ -43,10 +43,11 @@ public class demowiki {
 		TakesScreenshot ts=(TakesScreenshot)driver;
 		File src=ts.getScreenshotAs(OutputType.FILE);
 		
+		//File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		
-	String timw=new SimpleDateFormat("yyyy_MM_dd_hh_mm_ss a").format(new Date());
+	String time=new SimpleDateFormat("yyyy_MM_dd_hh_mm_ss a").format(new Date());
 		
-		String path = System.getProperty("user.dir")+ "/DemoLogin/"+ timw  +".png";
+		String path = System.getProperty("user.dir")+ "/DemoLogin/"+ time  +".png";
 		
 		
 		File dest = new File(path);

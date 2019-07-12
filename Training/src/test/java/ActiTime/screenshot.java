@@ -28,6 +28,10 @@ public class screenshot {
 		
 		try
 		{
+			
+			
+	
+			
 			FileUtils.copyFile(src,des);
 		}
 		

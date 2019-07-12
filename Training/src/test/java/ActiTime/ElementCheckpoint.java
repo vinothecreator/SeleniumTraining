@@ -23,6 +23,10 @@ public class ElementCheckpoint {
 		{
 		System.out.println("Failed to display the login page ");	
 		}
+		
+		driver.quit();
 		}
+	
+
 
 }

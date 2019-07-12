@@ -72,9 +72,11 @@ public qa2(WebDriver d) {
 		public void Titlelistbox(String title) {
 			Select drop = new Select(driver.findElement(By.name("title")));
 			drop.selectByValue(title);
-
+		
 		}
 
+		
+		
 		// set first name
 		public void typeFirstName(String text) {
 			firstNameTextbox.sendKeys("lotto");
