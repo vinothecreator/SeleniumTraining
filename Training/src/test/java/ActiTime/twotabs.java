@@ -11,19 +11,26 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class twotabs {
 
 	public static void main(String[] args) {
-	System.setProperty( "webdriver.gecko.driver", "C:\\\\Users\\vgunasekaran\\eclipse-workspace\\geckodriver.exe");
+	System.setProperty( "webdriver.gecko.driver", "C:\\Users\\vgunasekaran\\workspace\\libs\\geckodriver.exe");
 		WebDriver driver = new FirefoxDriver();
 		
 		driver.get("https://www.google.com");
 	
-		//((JavascriptExecutor)driver).executeScript("window.open()");
-		((JavascriptExecutor)driver).executeScript("window.Open");
+	/*	//((JavascriptExecutor)driver).executeScript("window.open()");
+		//((JavascriptExecutor)driver).executeScript("window.Open");
 		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
 		driver.switchTo().window(tabs.get(1));
 
 		driver.get("http://www.fb.me");
-		driver.switchTo().window(tabs.get(0));
+		driver.switchTo().window(tabs.get(1));
 		
+		driver.close();
+		driver.switchTo().window(tabs.get(0));*/
+
+		 ArrayList<String> tabs2 = new ArrayList<String> (driver.getWindowHandles());
+		    driver.switchTo().window(tabs2.get(1));
+		    driver.close();
+		    driver.switchTo().window(tabs2.get(0)); 
 	
 
 	
