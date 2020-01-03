@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class LoginLogoutScript {
 
 	public static void main(String[] args) {
-		System.setProperty( "webdriver.gecko.driver", "C:\\\\Users\\vgunasekaran\\eclipse-workspace\\geckodriver.exe");
+		System.setProperty( "webdriver.gecko.driver", "C:\\Users\\vgunasekaran\\workspace\\libs\\geckodriver.exe");
 		WebDriver driver = new FirefoxDriver();
 		
 		driver.get("https://demo.actitime.com/login.do");
